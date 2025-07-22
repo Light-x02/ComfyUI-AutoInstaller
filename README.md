@@ -1,3 +1,6 @@
+![Python 3.12.9](https://img.shields.io/badge/python-3.12.9-blue)
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
+
 # Full Installation Guide for ComfyUI with Python Virtual Environment (venv)
 
 This guide explains how to install **ComfyUI** in an isolated Python virtual environment with an advanced configuration:
@@ -198,3 +201,5 @@ Check the console to confirm that Torch, Triton, and SageAttention load without 
 ---
 
 ✨ You're now ready to use ComfyUI with full performance!
+
+
