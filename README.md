@@ -31,7 +31,7 @@ While ComfyUI can theoretically run on these alternatives, expect major limitati
 
 ---
 
-## . Requirements
+## Requirements
 
 ### ✅ Hardware / Software
 
@@ -83,7 +83,7 @@ To save time, you can use the provided batch script to automate installation. It
 ### ❌ Do not use PowerShell  
 Use **CMD** to avoid `.bat` or environment issues.
 
-## . Clone the ComfyUI repository
+## Clone the ComfyUI repository
 
 1. Open CMD (Win + R → type `cmd` → Enter).  
    ❗ **Do not close this window until the installation is complete.**
@@ -97,7 +97,7 @@ cd ComfyUI.torch2.9
 
 ---
 
-## . Create and activate Python virtual environment
+## Create and activate Python virtual environment
 
 Ensure Python 3.12.9 is properly installed.
 
@@ -108,7 +108,7 @@ call venv\Scripts\activate.bat
 
 ---
 
-## . Upgrade pip and build tools
+## Upgrade pip and build tools
 
 ```bat
 python -m pip install --upgrade pip setuptools wheel
@@ -116,7 +116,7 @@ python -m pip install --upgrade pip setuptools wheel
 
 ---
 
-## . Install PyTorch Nightly (CUDA 12.8)
+## Install PyTorch Nightly (CUDA 12.8)
 
 ```bat
 pip uninstall torch torchvision torchaudio -y
@@ -125,7 +125,7 @@ pip install torch==2.9.0.dev20250716+cu128 torchvision torchaudio --index-url ht
 
 ---
 
-## . Install Triton for Windows
+## Install Triton for Windows
 
 ```bat
 pip install triton-windows==3.2.0.post19
@@ -133,7 +133,7 @@ pip install triton-windows==3.2.0.post19
 
 ---
 
-## . Clean requirements.txt
+## Clean requirements.txt
 
 Open `requirements.txt` inside `ComfyUI.torch2.9` and remove or comment:
 
@@ -151,7 +151,7 @@ pip install -r requirements.txt
 
 ---
 
-## . Install SageAttention
+## Install SageAttention
 
 ```bat
 python -m pip install sageattention
@@ -159,7 +159,7 @@ python -m pip install sageattention
 
 ---
 
-## . Create a launch script
+## Create a launch script
 
 Create a `launch.bat` file in the `ComfyUI.torch2.9` folder with this content:
 
@@ -172,7 +172,7 @@ pause
 
 ---
 
-## . Install ComfyUI-Manager (optional)
+## Install ComfyUI-Manager (optional)
 
 ```bat
 cd custom_nodes
@@ -182,7 +182,7 @@ cd ..
 
 ---
 
-## . Fix setuptools conflict
+## Fix setuptools conflict
 
 ⚠️ This step is **mandatory**: certain setuptools versions conflict with Triton (especially via `pkg_resources`).
 
@@ -193,7 +193,7 @@ pip install setuptools==78.1.1
 
 ---
 
-## . Run ComfyUI
+## Run ComfyUI
 
 Launch `launch.bat` to start ComfyUI.  
 Check the console to confirm that Torch, Triton, and SageAttention load without errors.
