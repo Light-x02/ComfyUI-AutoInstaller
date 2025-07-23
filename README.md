@@ -161,7 +161,7 @@ python -m pip install sageattention
 
 ## Create a launch script
 
-Create a `launch.bat` file in the `ComfyUI.torch2.9` folder with this content:
+Create a `launch_comfyUI_torch2.9.bat` file in the `ComfyUI.torch2.9` folder with this content:
 
 ```bat
 @echo off
@@ -195,7 +195,7 @@ pip install setuptools==78.1.1
 
 ## Run ComfyUI
 
-Launch `launch.bat` to start ComfyUI.  
+Launch `launch_comfyUI_torch2.9.bat` to start ComfyUI.
 Check the console to confirm that Torch, Triton, and SageAttention load without errors.
 
 ---
