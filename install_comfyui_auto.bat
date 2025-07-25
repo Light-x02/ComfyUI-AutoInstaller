@@ -19,7 +19,7 @@ REM Install Torch nightly with CUDA 12.8
 pip install torch==2.9.0.dev20250716+cu128 torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128
 
 REM Install Triton for Windows
-pip install triton-windows==3.2.0.post19
+pip install triton-windows==3.3.1.post19
 
 REM Clean the requirements.txt (remove only torch, torchvision, torchaudio — keep torchsde)
 powershell -Command "(Get-Content requirements.txt) | Where-Object {($_ -notmatch '^torch==') -and ($_ -notmatch '^torchvision==') -and ($_ -notmatch '^torchaudio==')} | Set-Content requirements.txt"
