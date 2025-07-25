@@ -7,7 +7,7 @@ This guide explains how to install **ComfyUI** in an isolated Python virtual env
 
 - **Python**: 3.12.9  
 - **Torch**: 2.9.0.dev20250716+cu128  
-- **Triton**: triton-windows==3.2.0.post19  
+- **Triton**: triton-windows==3.3.1.post19  
 - **SageAttention**: enabled  
 - **fp16 accumulation**: enabled via `--fast fp16_accumulation`
 
@@ -128,7 +128,7 @@ pip install torch==2.9.0.dev20250716+cu128 torchvision torchaudio --index-url ht
 ## Install Triton for Windows
 
 ```bat
-pip install triton-windows==3.2.0.post19
+pip install triton-windows==3.3.1.post19
 ```
 
 ---
