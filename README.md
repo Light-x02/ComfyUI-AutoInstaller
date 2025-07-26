@@ -66,7 +66,7 @@ To save time, you can use the provided batch script to automate installation. It
 
 - Cloning the ComfyUI repository
 - Creating and activating a Python 3.12.9 virtual environment
-- Installing specific Torch (2.9.0.dev20250716+cu128) and Triton (3.2.0.post19) versions
+- Installing specific Torch (2.9.0.dev20250716+cu128) and Triton (3.3.1.post19) versions
 - Cleaning `requirements.txt`
 - Installing SageAttention and dependencies
 - Creating the launch script `launch_comfyUI_torch2.9.bat`
